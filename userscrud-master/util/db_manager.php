@@ -66,17 +66,12 @@
 
     function delete_user ($user_id){
         // COMPLETAR ELIMINAR DE USUARIO
-        $sql = "DELETE FROM user WHERE id='".$user_id."'";
-        $conn = $GLOBALS['conn'];
-        return $conn->query($sql) ;
+
 
     }
 
     function save_user (User $user){
         // COMPLETAR PARA GUARDAR EL USUARIO
-        $sql = "INSERT INTO user (username, password, name, surnames, email)
-                VALUES ('".$user->getUsername()."', '".$user->getPassword()."', '".$user->getName()."', '".$user->getSurnames()."', '".$user->getEmail()."')";
-        $conn = $GLOBALS['conn'];
-        return $conn->query($sql) ;
+
 
     }
